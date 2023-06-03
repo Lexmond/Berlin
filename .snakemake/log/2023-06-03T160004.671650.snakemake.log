@@ -1,0 +1,4 @@
+NameError in file /Users/nic/NIC/Berlin/Snakefile, line 22:
+name 'l3' is not defined
+  File "/Users/nic/NIC/Berlin/Snakefile", line 32, in <module>
+  File "/Users/nic/NIC/Berlin/Snakefile", line 22, in input_func_all

@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /Users/nic/NIC/Berlin/Snakefile, line 30:
+Missing input files for rule all:
+    affected files:
+        _nextalign/output/vic/pa/nextalign.aligned.fasta
+        _nextalign/output/vic/pa/nextalign_gene_PA.translation.fasta

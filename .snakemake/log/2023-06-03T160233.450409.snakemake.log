@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+nextalign        1              1              1
+total            2              1              1
+
+Select jobs to execute...
+
+[Sat Jun  3 16:02:33 2023]
+rule nextalign:
+    input: input/sequences_vic_pa.fasta, _nextalign/data/flu_vic_pa/reference.fasta, _nextalign/data/flu_vic_pa/genemap.gff
+    output: output/vic/pa/nextalign_gene_PA.translation.fasta, output/vic/pa/nextalign.aligned.fasta
+    jobid: 1
+    reason: Missing output files: output/vic/pa/nextalign.aligned.fasta, output/vic/pa/nextalign_gene_PA.translation.fasta
+    resources: tmpdir=/var/folders/by/sqn3xc615bq0lvz6wrjplc1w0000gn/T
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule nextalign in file /Users/nic/NIC/Berlin/Snakefile, line 48:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/vic/pa/nextalign_gene_PA.translation.fasta
+output/vic/pa/nextalign.aligned.fasta
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-06-03T160233.450409.snakemake.log

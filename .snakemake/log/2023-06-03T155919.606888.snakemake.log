@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /Users/nic/NIC/Berlin/Snakefile, line 30:
+Missing input files for rule all:
+    affected files:
+        output/aa_at_positions_for_vic_PA.xlsx

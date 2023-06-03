@@ -89,7 +89,8 @@ def generate_excel_output(output, sequence_names, amino_acid_sequences, position
 #
 # Set input fasta file (SNAKEFILE):
 # nextstrain.input.aa_fasta
-aa_fasta = '../_nextclade/output/flu_vic_ha/nextclade_gene_HA1.translation.fasta'
+# '../_nextclade/output/flu_vic_ha/nextclade_gene_HA1.translation.fasta'
+aa_fasta = snakemake.input.aa_fasta
 
 
 # Get 'aa_names' and 'aa_sequences' from input fasta file:
@@ -102,11 +103,12 @@ aa_names, aa_sequences = get_sequence_names_and_amino_acid_sequences(
 #
 # Set 'positions' using the input Excel file and by defining filters (SNAKEFILE):
 # nextstrain.input.positions_table
-positions_table = '../input/positions_by_lineage_and_segment.xlsx'
+# '../input/positions_by_lineage_and_segment.xlsx'
+positions_table = snakemake.input.positions_table
 
-filter_lineage = snakemake.input.filter_lineage
+filter_lineage = "vic"  # snakemake.input.filter_lineage
 
-filter_segment = snakemake.input.filter_segment
+filter_segment = "pa"  # snakemake.input.filter_segment
 
 # Get the input positions from the input excel_file that are filtered by lineage and segment:
 filtered_positions = get_positions_from_excel(
@@ -120,7 +122,8 @@ filtered_positions = get_positions_from_excel(
 #
 # Set the name of the final output file (SNAKEFILE):
 # nextstrain.output.excel_output
-excel_output = '../output/aa_at_positions_for_vic_HA1.xlsx'
+# '../output/aa_at_positions_for_vic_PA.xlsx'
+excel_output = snakemake.output.excel_output
 
 # Create an Excel file as final output:
 if aa_names and aa_sequences:
