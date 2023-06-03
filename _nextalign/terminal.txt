@@ -1,0 +1,93 @@
+##----------------------------- Install -------------------------------##
+
+# Create new environment
+conda create --name nextalign
+
+# Activate Nextalign environment
+conda activate nextalign   
+
+# Install Nextalign
+conda install -c bioconda nextalign
+
+# Install Snakemake
+conda install -c bioconda snakemake
+
+# Deactivate conda
+conda deactivate
+
+# Help files
+nextalign --help
+nextalign run --help
+
+# Run Snakefile
+Snakemake --cores 'all'
+
+
+##----------------------------------------------------------------------##
+
+##H3N2
+
+  nextalign run \
+  --input-ref _Nextalign/data/flu/h3n2/pa/reference.fasta \
+  --genemap _Nextalign/data/flu/h3n2/pa/genemap.gff \
+  --output-all _Nextalign/output/ \
+  _Nextalign/input/h3n2_pa_Corrected.fasta
+
+
+    nextalign run \
+  --input-ref=dataNIC/h3n2/ha/reference.fasta \
+  --genemap=dataNIC/h3n2/ha/genemap.gff \
+  --output-all=output/ \
+  input/h3n2_ha_Corrected.fasta
+
+
+    nextalign run \
+  --input-ref=dataNIC/h3n2/na/reference.fasta \
+  --genemap=dataNIC/h3n2/na/genemap.gff \
+  --output-all=output/ \
+  input/h3n2_na_Corrected.fasta
+
+##H1N1
+
+  nextalign run \
+  --input-ref=dataNIC/h1n1pdm/ha/reference.fasta \
+  --genemap=dataNIC/h1n1pdm/ha/genemap.gff \
+  --output-all=output/ \
+  input/h1n1pdm_ha_Corrected.fasta
+
+
+    nextalign run \
+  --input-ref=dataNIC/h1n1pdm/na/reference.fasta \
+  --genemap=dataNIC/h1n1pdm/na/genemap.gff \
+  --output-all=output/ \
+  input/h1n1pdm_na_Corrected.fasta
+
+
+  nextalign run \
+  --input-ref=dataNIC/h1n1pdm/pa/reference.fasta \
+  --genemap=dataNIC/h1n1pdm/pa/genemap.gff \
+  --output-all=output/ \
+  input/h1n1pdm_pa_Corrected.fasta
+
+
+##VIC
+
+  nextalign run \
+  --input-ref=dataNIC/vic/ha/reference.fasta \
+  --genemap=dataNIC/vic/ha/genemap.gff \
+  --output-all=output/ \
+  input/vic_ha_Corrected.fas
+
+
+    nextalign run \
+  --input-ref=dataNIC/vic/na/reference.fasta \
+  --genemap=dataNIC/vic/na/genemap.gff \
+  --output-all=output/ \
+  input/vic_na_Corrected.fas
+
+
+    nextalign run \
+  --input-ref=dataNIC/vic/pa/reference.fasta \
+  --genemap=dataNIC/vic/pa/genemap.gff \
+  --output-all=output/ \
+  input/vic_pa_Corrected.fas

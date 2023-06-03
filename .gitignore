@@ -1,0 +1,10 @@
+input/sequences*
+_nextalign/output/*
+_nextalign/input/*
+_nextalign/NCBI_downloads
+_nextclade/input/*
+_nextclade/output/*
+output/*
+_references
+_gisaid_sequences/*
+**/.DS_Store
