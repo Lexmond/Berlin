@@ -55,7 +55,7 @@ rule nextalign:
         genes_translated    = "_nextalign/output/{lineage}/{segment}/nextalign_gene_{gene}.translation.fasta",
         nt_segments_aligned = "_nextalign/output/{lineage}/{segment}/nextalign.aligned.fasta"
     conda:
-        "env/nextaliggn.yaml"
+        "env/nextalign.yaml"
     shell:
         """
         nextalign run \
