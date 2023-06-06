@@ -21,6 +21,8 @@ def input_func_all():
         l3.append("output/aa_at_positions_for_vic_PA.xlsx")
     return {"genes_translated" : l, "nt_segments_aligned" : l2, "excel_output" : l3}
 
+    # Added newline
+
 # wildcard_constraints:
 #     lineage = "[A-Za-z0-9]{3,7}",
 #     segment = "[A-Za-z0-9]{2,3}"
