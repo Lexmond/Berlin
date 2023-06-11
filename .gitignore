@@ -10,3 +10,5 @@ _gisaid_sequences/*
 **/.DS_Store
 .snakemake/*
 temp.py
+Snakefile_tryout.smk
+Snakefile_setup.smk

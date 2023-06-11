@@ -106,9 +106,9 @@ aa_names, aa_sequences = get_sequence_names_and_amino_acid_sequences(
 # '../input/positions_by_lineage_and_segment.xlsx'
 positions_table = snakemake.input.positions_table
 
-filter_lineage = "vic"  # snakemake.input.filter_lineage
+filter_lineage = snakemake.wildcards.lineage  # snakemake.input.filter_lineage
 
-filter_segment = "pa"  # snakemake.input.filter_segment
+filter_segment = snakemake.wildcards.segment  # snakemake.input.filter_segment
 
 # Get the input positions from the input excel_file that are filtered by lineage and segment:
 filtered_positions = get_positions_from_excel(
