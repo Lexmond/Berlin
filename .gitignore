@@ -8,4 +8,5 @@ output/*
 _references
 _gisaid_sequences/*
 **/.DS_Store
+.snakemake/*
 temp.py
