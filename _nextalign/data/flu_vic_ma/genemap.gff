@@ -1,0 +1,3 @@
+##gff-version 3
+##sequence-region KC866607.1 1 1189
+KC866607.1	Genbank	gene	25	771	.	+	.	gene_name="M1"

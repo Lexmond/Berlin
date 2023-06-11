@@ -1,12 +1,3 @@
 ##gff-version 3
-#!gff-spec-version 1.21
-#!processor NCBI annotwriter
 ##sequence-region MW626058.1 1 1002
-##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11320
-MW626058.1	Genbank	region	1	1002	.	+	.	ID=MW626058.1:1..1002;Dbxref=taxon:11320;Name=7;collection-date=19-Dec-2019;country=USA: Wisconsin;gbkey=Src;mol_type=viral cRNA;nat-host=Homo sapiens;note=passage details:C2S1 (2020-05-15);segment=7;serotype=H1N1;strain=A/Wisconsin/588/2019
-MW626058.1	Genbank	gene	14	995	.	+	.	ID=gene-M2;Name=M2;gbkey=Gene;gene=M2;gene_biotype=protein_coding
-MW626058.1	Genbank	CDS	14	39	.	+	0	ID=cds-QRV63261.1;Parent=gene-M2;Dbxref=NCBI_GP:QRV63261.1;Name=QRV63261.1;gbkey=CDS;gene=M2;product=matrix protein 2;protein_id=QRV63261.1
-MW626058.1	Genbank	CDS	728	995	.	+	1	ID=cds-QRV63261.1;Parent=gene-M2;Dbxref=NCBI_GP:QRV63261.1;Name=QRV63261.1;gbkey=CDS;gene=M2;product=matrix protein 2;protein_id=QRV63261.1
-MW626058.1	Genbank	gene	14	772	.	+	.	ID=gene-M1;Name=M1;gbkey=Gene;gene=M1;gene_biotype=protein_coding
-MW626058.1	Genbank	CDS	14	772	.	+	0	ID=cds-QRV63260.1;Parent=gene-M1;Dbxref=NCBI_GP:QRV63260.1;Name=QRV63260.1;gbkey=CDS;gene=M1;product=matrix protein 1;protein_id=QRV63260.1
-
+MW626058.1	Genbank	gene	14	772	.	+	.	gene_name="M1"

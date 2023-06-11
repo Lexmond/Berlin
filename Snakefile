@@ -12,7 +12,7 @@ from pathlib import Path
 
 data_dir=Path('input')
 
-gene_lookup = {'pb2':'PB2', 'pb1':'PB1', 'pa':'PA', 'ha':'HA1', 'np':'NP', 'na':'NA', 'ma':'MA', 'ns':'NS2'}
+gene_lookup = {'pb2':'PB2', 'pb1':'PB1', 'pa':'PA', 'ha':'HA1', 'np':'NP', 'na':'NA', 'ma':'M1', 'ns':'NS2'}
 
 def input_func_all():
     l,l2,l3,l4 = [],[],[],[]
@@ -45,7 +45,7 @@ rule_all_input_dict = input_func_all()
 
 print("Variables:")
 
-print(rule_all_input_dict)
+print(rule_all_input_dict["nt_segments_aligned"])
 # print(expand(rule_all_input_dict["genes_translated"]))
 # print(rule_all_input_dict["nt_segments_aligned"])
 # print(rule_all_input_dict["excel_output"
@@ -53,7 +53,7 @@ print(rule_all_input_dict)
 
 rule all:
     input:  
-        rule_all_input_dict["nt_segments_aligned"][2]
+        rule_all_input_dict["nt_segments_aligned"]#[2]
 
 
 # Run Nextalign on raw nucleotide sequences as downloaded from GISAID
