@@ -1,5 +1,5 @@
 {
-  "comment": "Updated tree",
+  "comment": "Addition of experimental lineages",
   "compatibility": {
     "nextcladeCli": {
       "max": null,
@@ -34,5 +34,5 @@
     "source": "genbank",
     "strainName": "A/Wisconsin/588/2019"
   },
-  "tag": "2023-04-02T12:00:00Z"
+  "tag": "2023-08-10T12:00:00Z"
 }

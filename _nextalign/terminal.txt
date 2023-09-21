@@ -91,3 +91,22 @@ Snakemake --cores 'all'
   --genemap=dataNIC/vic/pa/genemap.gff \
   --output-all=output/ \
   input/vic_pa_Corrected.fas
+
+
+    nextalign run \
+  --input-ref=_nextclade/data/flu_h1n1pdm_ha/reference.fasta \
+  --genemap=_nextclade/data/flu_h1n1pdm_ha/genemap.gff \
+  --output-all=output/nextclade/h1n1pdm/ha/ \
+  input/sequences_h1n1pdm_ha.fasta
+
+
+
+  nextclade run \
+   --input-dataset _nextclade/data/flu_h1n1pdm_ha\
+   --output-all=output/nextclade/h1n1pdm/ha/ \
+   input/sequences_h1n1pdm_ha.fasta
+
+     nextclade run \
+   --input-dataset _nextclade/data/flu_h1n1pdm_na\
+   --output-all=output/nextclade/h1n1pdm/na/ \
+   input/sequences_h1n1pdm_na.fasta

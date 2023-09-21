@@ -1,0 +1,17 @@
+gene_lookup:
+  {
+    "pb2": "PB2",
+    "pb1": "PB1",
+    "pa": "PA",
+    "ha": "HA1",
+    "np": "NP",
+    "na": "NA",
+    "ma": "M1",
+    "ns": "NS2",
+  }
+
+gene_lookup_clades: { "ha": "HA1", "na": "NA" }
+
+positions_table: "input/positions_by_lineage_and_segment.xlsx"
+
+excel_output: "output/{lineage}/{segment}/aa_at_positions_for_{gene}.xlsx"
